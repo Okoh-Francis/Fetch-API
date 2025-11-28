@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+#spinner{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 5px solid white ;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#user-btn{
+    height: 60px;
+    width: 100px;
+    border: none;
+    background: linear-gradient(to right, rgb(87, 10, 23), red);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    /* margin-bottom: 100px; */
+    cursor: pointer;   
+    transition:  0.4s ease-in-out;
+} 
+
+#user-btn:hover{
+    transform: scale(1.08);
+}
+
+img{
+    border-radius: 50%;
+}
+
+.user-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    background-color:rgb(15, 15, 15);
+    background: none;
+    gap: 40px;
+    width: 100vw;
+    border: none;
+}
+
+div{
+    background: linear-gradient(45deg, black, rgb(67, 64, 64));
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+
+div:hover{
+    box-shadow: 0 0 10px #0f0f0f80;
+}
+
+@media(max-width: 600px){
+    img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+footer{
+    background: rgb(36, 34, 34);
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: auto;
+}
+ul li {
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(182, 169, 169);
+    cursor: pointer;
+}
+
+h3{
+    margin: auto;
+    padding: auto;
+    color: white;
+}
+p{
+        color: rgb(182, 169, 169);
+}
